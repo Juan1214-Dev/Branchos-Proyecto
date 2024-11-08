@@ -1,0 +1,76 @@
+<%- include('../parciales/encabezado'); %>
+
+    <body>
+
+        <style>
+            tr,
+            td {
+                border: 2px solid red;
+            }
+            table {
+                max-width: 600px;
+                /* Ancho máximo del contenedor */
+                margin: auto;
+                /* Centrar el contenedor en la página */
+                padding: 20px;
+                /* Espaciado interno */
+                border: 1px solid #ccc;
+                /* Borde con color gris claro */
+                border-radius: 8px;
+                /* Bordes redondeados */
+                background-color: white;
+            }
+            h1{
+                text-align: center;
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+
+        <body>
+
+            <h1>Usuarios Registrados</h1>
+
+            <table>
+                <thead>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Telefono</th>
+                    <th>Documento</th>
+
+
+
+                </thead>
+                <tbody>
+                    <% listaPersonas.forEach(persona=> { %>
+                        <tr>
+                            <td>
+                                <%=persona.nombre%>
+                            </td>
+                            <td>
+                                <%=persona.email%>
+                            </td>
+                            <td>
+                                <%=persona.telefono%>
+                            </td>
+                            <td>
+                                <%=persona.documento%>
+                            </td>
+
+
+                        </tr>
+
+                        <%})%>
+                </tbody>
+            </table>
+            <a href="/registrarPersona" class="btn btn-primary">Regresar</a>
+
+
+        </body>
+
+        <%- include('../parciales/footer'); %>
+
+    </body>
+
+    </html>

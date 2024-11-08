@@ -1,0 +1,28 @@
+{
+  "name": "node-3",
+  "version": "1.0.0",
+  "description": "Primer proyecto con EJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon launcher"
+  },
+  "keywords": [
+    "[Nodejs",
+    "EJS"
+  ],
+  "author": "Juan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "router": "^1.3.8",
+    "yarn": "^1.22.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

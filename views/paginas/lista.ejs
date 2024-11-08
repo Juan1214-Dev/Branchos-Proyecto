@@ -1,0 +1,61 @@
+
+<%- include('../parciales/encabezado'); %>
+
+
+<head>
+
+ <link rel="stylesheet" href="/static/lista.css">
+
+</head>
+
+<body>
+  <div>
+    <table id="tabla-productos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Categorías</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="lista-productos"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const apiUrl = 'https://fakestoreapi.com/products';
+
+    function cargarProductos() {
+      fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+          const listaProductos = document.getElementById('lista-productos');
+          listaProductos.innerHTML = '';
+
+          data.forEach(producto => {
+            const fila = document.createElement('tr');
+            fila.innerHTML = `
+              <td>${producto.title}</td>
+              <td>$${producto.price}</td>
+              <td>${producto.category}</td>
+              <td>
+                <button class="btn-agregar-carrito" data-id="${producto.id}">
+                  Agregar
+                </button>
+                <button class="btn-agregar-carrito" data-id="${producto.id}">
+                  Eliminar
+                </button>
+              </td>
+            `;
+            listaProductos.appendChild(fila);
+          });
+        })
+        .catch(error => console.error('Error al cargar productos:', error));
+    }
+
+    cargarProductos();
+  </script>
+</body>
+
+<%- include('../parciales/footer'); %>

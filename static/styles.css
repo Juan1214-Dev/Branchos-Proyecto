@@ -1,0 +1,194 @@
+
+
+
+/* Estilo básico para las cartas, puedes personalizarlo más */
+.carta {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  height: 480px;
+  width: 20%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+body {
+  background-color: yellow;
+}
+
+#productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilo para la imagen en la carta */
+.carta img {
+  height: 200px;
+  width: 200px;
+}
+
+/* ################### Botones ####################### */
+
+.agregar-carrito {
+  border-radius: 5px;
+  background-color: #0d6efd;
+  width: 90px;
+  margin-top: 10px;
+}
+
+.eliminar_informacion, .editar_informacion{
+  background-color: #0d6efd;
+  border-radius: 12%;
+
+
+}
+
+.eliminar-producto{
+  border-radius: 5px;
+  background-color: red;
+  width: 90px;
+  margin-top: 10px;
+}
+.confirmar-compra{
+  border-radius: 5px;
+  background-color:  #0d6efd;
+  width: 90px;
+  margin-top: 10px;
+}
+/* ################### fin de Botones ####################### */
+
+table {
+  border: 1px solid black;
+  background-color: white;
+  text-align: center;
+  width: 100%;
+}
+
+tbody {
+  background-color: yellow;
+}
+
+td {
+  border: 3px solid black;
+
+}
+
+.container {
+  text-align: center;
+  background-color: blanchedalmond;
+  height: 800px;
+  width: 400px;
+}
+/*aqui sera como la forma de agrgar al carrito*/
+
+.producto-en-carrito{
+  border: 1px solid #000; 
+  padding: 10px; 
+  margin: 10px;
+}
+
+.producto-en-carrito img{
+  width: 50px; 
+  display: block; 
+  margin: auto;
+}
+/*///////////Form////////////*/
+  /* Estilos para el contenedor del formulario */
+
+.form-compra{
+
+  max-width: 600px; /* Ancho máximo del contenedor */
+  margin: auto; /* Centrar el contenedor en la página */
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde con color gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: white;
+}
+/*////////////////////////footer//////////////////////////////////////*/
+/*aqui  esta todos los estilos del footer*/
+header {
+  background-color: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 85px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-contact {
+  text-align: left;
+}
+
+.footer-social {
+  text-align: right;
+}
+
+.footer-disclaimer {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/*#############################################################*/
+#logos {
+  display: flex;
+  /* Mostrar los logos en una fila */
+  justify-content: center;
+  /* Centrar los logos horizontalmente */
+  align-items: center;
+  /* Centrar los logos verticalmente */
+  padding: 30px;
+  /* Espaciado interior para los logos */
+  border-radius: 20px;
+
+}
+
+#logos img {
+  width: 80px;
+  /* Ancho de los logos */
+  height: auto;
+  /* Altura automática para mantener la proporción original */
+  margin: 20px;
+  /* Espacio entre los logos */
+  border-radius: 20px;
+
+}
+
+#img_footer {
+  height: 200px;
+  width: 280px;
+  border-radius: 10px;
+  
+}
